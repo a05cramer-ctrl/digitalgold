@@ -1,0 +1,75 @@
+:root {
+  /* Gold palette */
+  --gold-bright: #FFD700;
+  --gold-warm: #DAA520;
+  --gold-deep: #B8860B;
+  --gold-dark: #8B6914;
+  --gold-glow: rgba(255, 215, 0, 0.4);
+  
+  /* Background tones */
+  --bg-dark: #0D0A06;
+  --bg-marble: #1A1611;
+  --bg-stone: #2A241C;
+  --sand: #C4A35A;
+  --sand-light: #E8D5A3;
+  --cream: #F5E6C8;
+  
+  /* Text */
+  --text-primary: #F5E6C8;
+  --text-secondary: rgba(245, 230, 200, 0.7);
+  --text-muted: rgba(245, 230, 200, 0.5);
+  
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-dark);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background: 
+    radial-gradient(ellipse at 50% 0%, rgba(218, 165, 32, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(184, 134, 11, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse at 20% 80%, rgba(139, 105, 20, 0.06) 0%, transparent 40%),
+    var(--bg-dark);
+}
+
+::selection {
+  background: var(--gold-warm);
+  color: var(--bg-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: var(--gold-warm);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--gold-bright);
+}
