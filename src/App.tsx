@@ -3,7 +3,7 @@ import './App.css'
 import heroImage from './hf_20260126_100914_28161e13-8151-4968-9349-fd471a244865.png'
 import iconImage from './hf_20260126_100712_4288b067-2eba-45c1-86a3-249b95829156 (1).png'
 
-const CONTRACT_ADDRESS = 'DNH54L6FKhqW6QwvypbvKhbRnu826i6tUBX4dyXfpump'
+const CONTRACT_ADDRESS = 'CsF64HjBRZGuDXzjy3AsSB9r33y31MWuWcnbeLwbonk'
 
 function App() {
   const [scrollY, setScrollY] = useState(0)
